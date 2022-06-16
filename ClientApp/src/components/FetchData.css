@@ -1,0 +1,32 @@
+﻿.split-cell {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+table {
+    width: 100%;
+}
+
+thead, tbody {
+    display: block;
+    width: 100%;
+}
+
+tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+td,th {
+    width: 100%;
+}
+
+tbody {
+    height: 60vh;
+    overflow: auto;
+}
+
+
+.center {
+    text-align: center;
+}

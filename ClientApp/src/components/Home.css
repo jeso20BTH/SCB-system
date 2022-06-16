@@ -1,0 +1,22 @@
+﻿.baby-img-div {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.baby-img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(108, 108, 108, 0.8) 2px 2px
+}
+
+.baby-img-text {
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(108, 108, 108, 0.8);
+    color: white;
+    padding: 0.5em;
+}
