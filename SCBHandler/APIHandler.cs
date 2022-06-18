@@ -8,7 +8,7 @@ namespace SCBHandeler
     public class APIHandler
     {
         private static readonly HttpClient client = new HttpClient();
-        private static readonly string url = "https://api.scb.se/OV0104/v1/doris/sv/ssd/START/BE/BE0101/BE0101H/FoddaK";
+        private static string url { get; } = "https://api.scb.se/OV0104/v1/doris/sv/ssd/START/BE/BE0101/BE0101H/FoddaK";
 
         public Dictionary<string, string> getMunicipalityCodes() 
         {
