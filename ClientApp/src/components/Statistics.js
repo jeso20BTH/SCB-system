@@ -1,13 +1,14 @@
+import { Log } from 'oidc-client';
 import React, { Component } from 'react';
-import './FetchData.css';
+import './Statistics.css';
 
-export class FetchData extends Component {
-    static displayName = FetchData.name;
+export class Statistics extends Component {
+    static displayName = Statistics.name;
 
     constructor(props) {
         super(props);
         this.state = {
-            born: [], loading: true, year: ["2016", "2017", "2018", "2019", "2020"], gender: ["1", "2"], searchstring: "halmstad"};
+            born: [], loading: true, year: ["2016", "2017", "2018", "2019", "2020"], gender: ["1", "2"]};
     }
 
     componentDidMount() {
@@ -42,8 +43,7 @@ export class FetchData extends Component {
                 </thead>
                 <tbody>
                     {born.map(brn =>
-                    
-                        (brn.name.toLowerCase().includes(searchstring)) ? <tr key={brn.id}>
+                        <tr key={brn.id}>
                             <td>{brn.name}</td>
                             {year.map((year) =>
                                 <td key={year}>
@@ -55,9 +55,7 @@ export class FetchData extends Component {
                                     </div>
                                 </td>
                             )}
-                        </tr> : <></>
-                    
-                        
+                        </tr>  
                     )}
                 </tbody>
             </table>
@@ -67,7 +65,7 @@ export class FetchData extends Component {
     render() {
         let contents = this.state.loading
             ? <p><em>Loading...</em></p>
-            : FetchData.renderMunicipalityTable(this.state.born, this.state.year, this.state.gender, this.state.searchstring);
+            : Statistics.renderMunicipalityTable(this.state.born, this.state.year, this.state.gender, this.state.searchstring);
         return (
             <div>
                 <h1 id="tabelLabel" >Antal f&#246;dda barn</h1>
