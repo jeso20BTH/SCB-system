@@ -19,8 +19,8 @@ namespace SCBCompilerAPI.Controllers
 
         // GET: api/<ValuesController>
         [HttpGet]
-        public async Task<List<Municipality>> Get() =>
-            await _municipalitiesService.GetAsync();
+        public async Task<ActionResult<List<Municipality>>> Get() =>
+            Ok(await _municipalitiesService.GetAsync());
 
         // GET api/<ValuesController>/5
         [HttpGet("{id}")]
@@ -33,7 +33,7 @@ namespace SCBCompilerAPI.Controllers
                 return NotFound();
             }
 
-            return municipality;
+            return Ok(municipality);
         }
     }
 }

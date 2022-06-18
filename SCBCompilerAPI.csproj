@@ -24,4 +24,10 @@
     <ProjectReference Include="..\SCBHandler\SCBHandler.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="FileHandeling">
+      <HintPath>..\FileHandler\bin\Debug\net6.0\FileHandeling.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
