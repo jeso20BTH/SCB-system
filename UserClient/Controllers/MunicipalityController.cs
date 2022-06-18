@@ -8,6 +8,7 @@ namespace UserClient.Controllers
     public class MunicipalityController : ControllerBase
     {
         private static readonly HttpClient client = new HttpClient();
+        private static readonly url = "https://localhost:7165/api/Municipality";
 
         private readonly ILogger<MunicipalityController> _logger;
 
@@ -19,8 +20,8 @@ namespace UserClient.Controllers
         [HttpGet]
         public string Get()
         {
-            var data = client.GetStringAsync("https://localhost:7165/api/Municipality").Result;
+            var data = client.GetStringAsync(url).Result;
             return data;
         }
-    }      
+    }
 }
