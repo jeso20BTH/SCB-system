@@ -16,6 +16,7 @@ The methods for the class.
 Initialization method.
 - Attributes:
     - `filename` -  The filename for the file you later wanna interact with.
+        - type: `string`
 #### readFile
 Method for reading the file from the initialization.
 - Attribute:
