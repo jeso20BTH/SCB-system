@@ -7,6 +7,16 @@ An class that is made to read JSON files.
 - `public string filename` - path within your project folder to the JSON file you want to read from.
 
 ### Methods
-- `Init` - `Attribute: filename` - Initialization method needs the filename for the file you later wanna interact with.
-- `readFile`- `Attribute: None` - `Returns JToken` - Method for reading the file from the initialization.
-- `getProjectFolder` - `Attributes: None` - `Returns string` - Method for getting the path to the current work folder, it is used by the `readFile` method to find the file.
+- `Init` - Initialization method needs the filename for the file you later wanna interact with.
+    - Attributes:
+        - `filename`
+- `readFile`- Method for reading the file from the initialization.
+    - Attribute:
+        - -
+    - Returns:
+        - `JToken`
+- `getProjectFolder`  - Method for getting the path to the current work folder, it is used by the `readFile` method to find the file.
+    - Attributes:
+        - -
+    - Returns:
+        - `string`
