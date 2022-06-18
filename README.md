@@ -9,19 +9,19 @@ I would also recommend you to use [Virtual Studio](https://visualstudio.microsof
 `Database name: scb`  
 `Collection name: born`
 2. Within `appsettings.json` do you need to make sure the configuration matches yours in order to connect properly to the database.
-``
+```
 "SCBDatabase": {
   "ConnectionString": "mongodb://localhost:27017",
   "DatabaseName": "scb",
   "MunicipalitiesCollectionName": "born"
-``
+```
 3. With above steps done, to start it localy within Virtual Studio you run it without debugging. For me it then proceeds to run on `https://localhost:7165/`.
 
 # Requests
 Bellow is all available requests in which you can interact with the API.
 ## Get all
 On the URI `/api/Municipality` if with a `GET` request you will get the statistics for all municipalities as a list at bellow format.
-``json
+```
 {
     "id": "0114",
     "name": "Upplands Väsby",
@@ -48,7 +48,7 @@ On the URI `/api/Municipality` if with a `GET` request you will get the statisti
       }
     }
 }
-``
+```
 `id` - The id for that specific municipality.  
 `name` - The name of that specific municipality.
 `born` - an array of all years birth statistics, with the years as keys.
