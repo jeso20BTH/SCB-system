@@ -2,11 +2,11 @@
 
 namespace FileHandler
 {
-    public class FileHandler
+    public class FileReader
     {
         public string filename { get; set; }
 
-        public FileHandler(string filename)
+        public FileReader(string filename)
         {
             this.filename = filename;
         }
