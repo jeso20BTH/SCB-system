@@ -42,4 +42,4 @@ Method used to group the data to a format MongoDB can handle.
     - `dataset` - The JSON data you want to group by municipality.
         - Type: `string`
 - Returns:
-    `Dictionary<string, Dictionary<string, Dictionary<string, string>>>` - An dictionary grouped by municipality with each year in an inner dictionary.
+    - `Dictionary<string, Dictionary<string, Dictionary<string, string>>>` - An dictionary grouped by municipality with each year in an inner dictionary.
