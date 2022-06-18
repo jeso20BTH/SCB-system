@@ -8,7 +8,7 @@ namespace UserClient.Controllers
     public class MunicipalityController : ControllerBase
     {
         private static readonly HttpClient client = new HttpClient();
-        private static readonly url = "https://localhost:7165/api/Municipality";
+        private static string url { get; } = "https://localhost:7165/api/Municipality";
 
         private readonly ILogger<MunicipalityController> _logger;
 
