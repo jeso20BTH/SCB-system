@@ -5,7 +5,7 @@ municipalities. The data is fetched through the [SCB API](https://scb.se/vara-tj
 # Setup
 The API uses [MongoDB](https://www.mongodb.com/), in order to be able to setup the API you first need to install MongoDB if you do not already have it.
 I would also recommend you to use [Virtual Studio](https://visualstudio.microsoft.com/) to run it localy
-1. Within mongoDB you nead to create the following database  
+1. Within mongoDB you nead to create the following database:  
 `Database name: scb`  
 `Collection name: born`
 2. Within `appsettings.json` do you need to make sure the configuration matches yours in order to connect properly to the database.
